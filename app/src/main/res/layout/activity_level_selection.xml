@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cxo05.howfastcanyoumath.Level_selection"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:background="@color/darkslateblue">
+
+    <TextView
+        android:id="@+id/diff_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/diff"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:layout_marginTop="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:backgroundTint="@color/darkorange" />
+
+        <Button
+            android:id="@+id/go_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:backgroundTint="@color/darkorange"
+            android:text="GO"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/darkorange"
+            android:src="@drawable/ic_description"
+            android:padding="10dp"
+            android:id="@+id/instructions"/>
+
+    </LinearLayout>
+
+    <!--<Spinner
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/type"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/spinner">
+    </Spinner>-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="70dp"
+        android:background="@color/orchid"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:id="@+id/type">
+
+        <TextView
+            android:id="@+id/Normal"
+            android:textAlignment="center"
+            android:text="NORMAL"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/Endurance"
+            android:textAlignment="center"
+            android:text="ENDURANCE"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cxo05.howfastcanyoumath.MainGame"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:background="@color/darkslateblue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textAlignment="center"
+            android:id="@+id/points"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:id="@+id/equationLayout"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/darkorange"
+                android:text="NUM"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:id="@+id/eqn1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="50sp"
+                android:id="@+id/operator"
+                android:textColor="@color/darkorange"/>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/circle"
+                android:text="NUM"
+                android:backgroundTint="@color/darkorange"
+                android:textSize="24sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:id="@+id/eqn2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:textSize="50sp"
+                android:textColor="@color/darkorange"/>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/circle"
+                android:text="\?"
+                android:backgroundTint="@color/darkorange"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_margin="10dp"
+                android:id="@+id/eqn3"
+                />
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/time"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:id="@+id/TABLE">
+
+            <TableRow
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/darkorange"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:layout_margin="10dp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/asd1"/>
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/darkorange"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:layout_margin="10dp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/asd2"/>
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/asd3"
+                    android:backgroundTint="@color/darkorange"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@drawable/circle"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:gravity="center">
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/asd4"
+                    android:backgroundTint="@color/darkorange"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@drawable/circle" />
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/asd5"
+                    android:backgroundTint="@color/darkorange"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@drawable/circle"/>
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/asd6"
+                    android:backgroundTint="@color/darkorange"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@drawable/circle"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:gravity="center">
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/asd7"
+                    android:backgroundTint="@color/darkorange"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@drawable/circle" />
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/asd8"
+                    android:backgroundTint="@color/darkorange"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@drawable/circle"/>
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/asd9"
+                    android:backgroundTint="@color/darkorange"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@drawable/circle"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>

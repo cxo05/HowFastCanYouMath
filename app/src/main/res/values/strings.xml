@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">HOW FAST CAN YOU MATH</string>
+    <string name="diff">DIFFICULTY SELECTION</string>
+
+    <string name="about_text">Made by Xavier Oh\n\nMusic : Eric Matyas\nQUIRKY PUZZLE GAME MENU</string>
+    <string name="instructions_text">
+        NORMAL\n
+        You have 4 seconds to choose the correct answer.\n
+        If you run out of time or choose the wrong answer, you lose.\n\n
+        ENDURANCE\n
+        You have 20 seconds to answer complete as many equations as possible.\n
+        Each correct answer gives back 3 seconds.
+    </string>
+
+    <string name="Normal_Highscore">0</string>
+    <string name="Endurance_Highscore">0</string>
+    
+    <string-array name="Number_range">
+        <item>1 – 10</item>
+        <item>1 – 20</item>
+        <item>1 – 30</item>
+        <item>1 – 40</item>
+        <item>1 – 50</item>
+        <item>1 – 60</item>
+        <item>1 – 70</item>
+        <item>1 – 80</item>
+        <item>1 – 90</item>
+        <item>1 – 100</item>
+    </string-array>
+</resources>
